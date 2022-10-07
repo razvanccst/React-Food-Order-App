@@ -1,23 +1,15 @@
-import React ,{useState} from "react";
-
-
+import React  from "react";
 import Header from "./components/Layout/Header";
 import Meals from "./components/Meals/Meals";
-import Cart from "./components/Cart/Cart";
-
-
 
 function App() {
-  const [cartIsShow, setCartIsShown] = useState(false);
- 
   return (
-    <React.Fragment>
-      <Cart />
-      <Header />
-      <main>
-        <Meals />
-      </main>
-    </React.Fragment>
+  <>
+    <Header></Header>
+    <main>
+      <Meals />
+    </main>
+  </>
   );
 }
 

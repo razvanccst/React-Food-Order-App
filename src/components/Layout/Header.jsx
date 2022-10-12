@@ -8,10 +8,10 @@ const Header = (props) => {
     <>
       <header className={classes.header}>
         <h1>Logo</h1>
-        <CartButton />
+        <CartButton onClick={props.onShowprops} />
       </header>
       <div className={classes['main-image']}>
-        <img src={bannerImage} alt="Banner Image" />
+        <img src={bannerImage} alt="" />
       </div>
     </>
   )
